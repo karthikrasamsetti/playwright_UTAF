@@ -1,0 +1,6 @@
+{
+    "success" : 200,
+    "created" : 201,
+    "notFound" : 404,
+    "forbidden" : 403
+}

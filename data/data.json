@@ -1,0 +1,26 @@
+{
+    "loginDetails": {
+        "username": "standard_user",
+        "password": "secret_sauce",
+        "invalidusername":"invalid",
+        "invalidpassword":"invalidpassword"
+    },
+    "personalDetails":{
+        "firstname":"user",
+        "lastname":"name",
+        "zipcode":"533443"
+    },
+    "filter":{
+        "nameAsc":"Name (A to Z)",
+        "nameDsc":"Name (Z to A)",
+        "priceLtoH":"Price (low to high)",
+        "priceHtoL":"Price (high to low)"
+    },
+    "navBarText" : [
+        "All Items",
+        "About",
+        "Logout",
+        "Reset App State"
+    ]
+    
+}

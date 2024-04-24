@@ -1,0 +1,28 @@
+{
+  "name": "playwright_utaf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "ui_test": "npx playwright test tests/ui_test.spec.js",
+    "api_test": "npx playwright test tests/api_test.spec.js",
+    "a11y_test": "npx playwright test tests/a11y_test.spec.js",
+    "k6_test": "k6 run -o experimental-prometheus-rw utils/performance_test.spec.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@axe-core/playwright": "^4.8.5",
+    "@playwright/test": "^1.43.1",
+    "@reportportal/agent-js-playwright": "^5.1.8",
+    "@types/node": "^20.12.7",
+    "k6-html-reporter": "^1.0.5",
+    "ajv": "^8.12.0"
+  },
+  "dependencies": {
+    "axe-html-reporter": "^2.2.3",
+    "axios": "^1.6.8",
+    "dotenv": "^16.4.5"
+  }
+}

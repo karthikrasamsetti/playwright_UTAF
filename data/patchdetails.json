@@ -1,0 +1,6 @@
+ {
+        "firstname": "TestFirstName_updated_patch",
+        "lastname": "TestLastName_updated",
+        "totalprice": 4550,
+        "depositpaid": true
+    }
