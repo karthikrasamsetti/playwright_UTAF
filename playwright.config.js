@@ -43,7 +43,7 @@ module.exports = defineConfig({
   workers: process.env.CI ? 1 : undefined,
   timeout: 1000 * 60 * 2,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  // reporter: 'html',
+  reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
@@ -59,7 +59,7 @@ module.exports = defineConfig({
       slowMo: 500,
     },
   },
-  reporter: [['@reportportal/agent-js-playwright', RPconfig],['html']],
+  // reporter: [['@reportportal/agent-js-playwright', RPconfig],['html']],
   /* Configure projects for major browsers */
   projects: [
     {
