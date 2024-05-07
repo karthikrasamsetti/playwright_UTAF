@@ -55,11 +55,11 @@ module.exports = defineConfig({
     screenshot: "only-on-failure",
     headless: true,
     viewport: { width: 1900, height: 940 },
-    // launchOptions: {
-    //   slowMo: 500,
-    // },
+    launchOptions: {
+      slowMo: 500,
+    },
   },
-  reporter: [['@reportportal/agent-js-playwright', RPconfig]],
+  reporter: [['@reportportal/agent-js-playwright', RPconfig],['html']],
   /* Configure projects for major browsers */
   projects: [
     {
