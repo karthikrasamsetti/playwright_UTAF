@@ -1,5 +1,7 @@
+import { allure } from "allure-playwright";
+
 export async function executeStep(test, element, action, description, data) {
-    await test.step(description,async () => {
+    await allure.step(description,async () => {
         switch (action) {
             case "click" :
                 await element.click();

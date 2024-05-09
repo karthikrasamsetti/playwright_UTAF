@@ -17,8 +17,10 @@
     "@playwright/test": "^1.43.1",
     "@reportportal/agent-js-playwright": "^5.1.8",
     "@types/node": "^20.12.7",
-    "k6-html-reporter": "^1.0.5",
-    "ajv": "^8.12.0"
+    "ajv": "^8.12.0",
+    "allure-commandline": "^2.29.0",
+    "allure-playwright": "^2.15.1",
+    "k6-html-reporter": "^1.0.5"
   },
   "dependencies": {
     "axe-html-reporter": "^2.2.3",
