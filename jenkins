@@ -1,14 +1,9 @@
 {
     agent any
-    tools{
-      nodejs 'node'
+    tools {
+        nodejs 'node'
     }
     stages {
-        stage('Checkout') {
-            steps {
-                git branch: 'main',  url: 'https://github.com/karthikrasamsetti/playwright_UTAF.git'
-            }
-        }
         stage('Build') {
             steps {
                 script {
@@ -23,7 +18,7 @@
                 }
             }
         }
-        stage('Execute') {
+        stage('Generate Report') {
             steps {
                 script {
                     bat ' npx allure generate --clean allure-results && npx  allure open'
@@ -34,7 +29,6 @@
     post {
         always {
             archiveArtifacts artifacts: 'allure-report/*', allowEmptyArchive: true
-            
         }
     }
 }
