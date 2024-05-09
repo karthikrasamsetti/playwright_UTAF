@@ -21,7 +21,7 @@ pipeline {
         stage('Generate Report') {
             steps {
                 script {
-                    bat ' npx allure generate --clean allure-results && npx  allure open'
+                    bat ' npx allure generate --clean allure-results'
                 }
             }
         }
