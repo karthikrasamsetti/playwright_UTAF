@@ -36,10 +36,9 @@ steps:
     cd '$(Build.SourcesDirectory)'
     npx allure generate --clean allure-results
   displayName: 'generate allure report'
- 
 - task: PublishAllureReport@1
   inputs:
-    testResultsDir: 'allure-report'
+    reportDir: 'allure-report'
  
 - task: CopyFiles@2
   inputs:
