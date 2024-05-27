@@ -7,7 +7,9 @@
     "ui_test": "npx playwright test tests/ui_test.spec.js",
     "api_test": "npx playwright test tests/api_test.spec.js",
     "a11y_test": "npx playwright test tests/a11y_test.spec.js",
-    "k6_test": "k6 run -o experimental-prometheus-rw utils/performance_test.spec.js"
+    "k6_server": "cross-env K6_PROMETHEUS_RW_SERVER_URL=\"http://10.10.90.97:9090/api/v1/write\"",
+    "k6_env": "cross-env K6_PROMETHEUS_RW_TREND_STATS=\"p(95),p(99),min,max\"",
+    "performance": "k6 run -o experimental-prometheus-rw=http://10.10.90.97:9090/api/v1/write utils/performance.js"
   },
   "keywords": [],
   "author": "",
