@@ -7,9 +7,9 @@ import { testPlanFilter } from "allure-playwright/dist/testplan";
  */
 // require('dotenv').config();
 const RPconfig = {
-  apiKey: 'demo_xvE-8uVzRlOEO8CTwvDGNxwnvk4NnUqt7qHOMlB-Vs1kq4lbfWjn5Os3_pjIGTKE',
-  endpoint: 'http://localhost:8080/api/v1',
-  project: 'superadmin_personal',
+  apiKey: 'playwright-UTAF_OIpI8zAsSpuY18JD1116YEwyTK_kQfC60SksI8UOFohgKQYii7HhXgNhXeXdmbwu',
+  endpoint: 'http://10.10.90.97:8080/api/v1',
+  project: 'playwright_utaf',
   launch: 'Regression',
   attributes: [
     {
@@ -59,7 +59,7 @@ module.exports = defineConfig({
       framework: "playwright",
     },
   },
-]],
+],['@reportportal/agent-js-playwright', RPconfig]],
   // reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {

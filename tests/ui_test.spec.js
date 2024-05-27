@@ -34,6 +34,7 @@ test("Login with invalid user", async ({page}) => {
     */
     await loginPage.InvalidLoginAction();
     await page.waitForTimeout(parseInt(process.env.medium_timeout));
+    // await expect(dashboardPage.logo).toBeVisible();
     await expect(loginPage.errorLogin).toBeVisible();
 });
 
