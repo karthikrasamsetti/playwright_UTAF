@@ -7,7 +7,8 @@
     "ui_test": "npx playwright test tests/ui_test.spec.js",
     "api_test": "npx playwright test tests/api_test.spec.js",
     "a11y_test": "npx playwright test tests/a11y_test.spec.js",
-    "k6_test": "k6 run -o experimental-prometheus-rw utils/performance_test.spec.js"
+    "k6_test": "k6 run -o experimental-prometheus-rw utils/performance_test.spec.js",
+    "generate_report":"npx allure generate --clean allure-results"
   },
   "keywords": [],
   "author": "",
@@ -25,6 +26,7 @@
   "dependencies": {
     "axe-html-reporter": "^2.2.3",
     "axios": "^1.6.8",
-    "dotenv": "^16.4.5"
+    "dotenv": "^16.4.5",
+    "ortoni-report": "^1.0.9"
   }
 }

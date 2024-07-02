@@ -59,7 +59,14 @@ module.exports = defineConfig({
       framework: "playwright",
     },
   },
-],['@reportportal/agent-js-playwright', RPconfig]],
+],
+["ortoni-report",
+    {
+      projectName: 'Plawright UTAF',
+      authorName: 'karthik',
+      testType: 'E2E'
+    }],
+['@reportportal/agent-js-playwright', RPconfig]],
   // reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
@@ -70,7 +77,7 @@ module.exports = defineConfig({
     trace: "on" /* Collect trace always. See https://playwright.dev/docs/trace-viewer */,
     video: "on" /* Record Video */,
     screenshot: "only-on-failure",
-    headless: true,
+    headless: false,
     viewport: { width: 1900, height: 940 },
     launchOptions: {
       slowMo: 500,
